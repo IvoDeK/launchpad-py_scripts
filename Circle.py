@@ -50,7 +50,7 @@ def main():
                                 if buts[0] == 6 and buts[1] == 8 and buts[2] == 0:
                                     hotkey('command', ' ')
                                 if buts[0] == 7 and buts[1] == 0 and buts[2] == 0:
-                                    break
+                                    return
                                 if buts[0] == 7 and buts[1] == 8 and buts[2] == 0:
                                     hotkey('command', 'ctrl', 'q')
                                 if buts[0] == 8 and buts[1] == 6 and buts[2] == 0:
@@ -61,18 +61,6 @@ def main():
                                 lp.LedCtrlPulseXYByCode(x,y,colors[c])
                             else:
                                 lp.LedCtrlXYByCode(x,y,3)
-                        else:
-                            continue
-                        break
-                    else:
-                        continue
-                    break
-                else:
-                    continue
-                break
-            else:
-                continue
-            break
                     
     loop()
     
